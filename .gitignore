@@ -1,0 +1,7 @@
+vendor
+wp-content
+.sass-cache/
+node_modules/
+style.css
+style.css.map
+yarn.lock

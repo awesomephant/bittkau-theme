@@ -1,0 +1,26 @@
+body {
+    font-family: $slab;
+}
+
+a {
+    color: $blue;
+}
+
+.site-header {
+    background: $green;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.site-title a{
+    color: white;
+    font-weight: 300;
+    display: block;
+    margin-bottom: -.4em;
+    text-decoration: none;
+}
+
+.site-description {
+    font-weight: 300;
+    color: rgba($black, .9);
+}
