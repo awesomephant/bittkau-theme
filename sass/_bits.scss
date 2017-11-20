@@ -1,4 +1,20 @@
-$blue: lighten(#80A7C8, 5);
+$blue: #0082DE;
+$lightblue: lighten($blue, 12);
+$lightgray: lighten(desaturate($blue, 35), 48);
 $green: lighten(#57B75C, 2);
 $black: rgb(23,22,20);
+
+$sans: Helvetica;
 $slab: 'ff-tisa-web-pro', Helvetica;
+
+@mixin bp($point) {
+    @if $point == l {
+      @media (min-width: 65rem) { @content; }
+    }
+    @else if $point == m {
+      @media (min-width: 45rem) { @content; }
+    }
+    @else if $point == s {
+      @media (min-width: 35rem)  { @content; }
+    }
+  }

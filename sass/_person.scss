@@ -1,0 +1,19 @@
+.person {
+    display: flex;
+    header {
+        margin-right: 1rem;
+    }
+}
+.person-image {
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.person-name {
+    margin-bottom: -.25rem;
+}
+
+.person-job {
+    font-weight: normal;
+    margin-bottom: .5rem;
+}

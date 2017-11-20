@@ -2,25 +2,60 @@ body {
     font-family: $slab;
 }
 
-a {
+p a {
     color: $blue;
+    text-decoration: none;
+    border-bottom: 1px solid $lightgray;
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+.pre {
+    white-space: pre;
 }
 
 .site-header {
-    background: $green;
+    background: $lightgray;
+    border-bottom: 1px solid darken($lightgray, 3);
     padding: 1.5rem;
     font-size: 1.1rem;
+    @include bp(m){
+        font-size: 1.4rem;
+    }
 }
 
 .site-title a{
-    color: white;
-    font-weight: 300;
+    color: $black;
+    font-weight: 600;
     display: block;
-    margin-bottom: -.4em;
+    margin-bottom: -.2em;
     text-decoration: none;
 }
 
 .site-description {
     font-weight: 300;
-    color: rgba($black, .9);
+    color: rgba($black, .7);
+}
+
+.site-footer {
+    padding: 1rem;
+    font-family: $sans;
+    font-size: .8rem;
+}
+
+.page-section {
+    padding: 1rem;
+    border-bottom: 1px solid $lightgray;
+    max-width: 45rem;
+}
+
+.section-title {
+    margin-bottom: .5em;
+    @include bp(m){
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
 }
